@@ -1,0 +1,97 @@
+.header-top {
+  min-height: 10vh;
+  z-index: 2;
+  padding: 2rem 3%;
+  @include flex(space-between, center);
+  .logo img {
+    height: 5rem;
+    width: auto;
+  }
+}
+
+.header-menu {
+  list-style: none;
+  @include flex(space-between, center);
+  width: 20rem;
+}
+
+header {
+  border-top: 0.5rem solid #00a2ff;
+  height: 85vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      #42424280,
+      rgba(66, 66, 66, 0.5)
+    ),url("../images/chair-3306118_640.jpg");
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.top-section {
+  position: absolute;
+  height: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  section {
+    width: 50vw;
+    h3 {
+      font-weight: 500;
+    }
+  }
+}
+
+.input-div {
+  margin-top: 2rem;
+  background-color: white;
+  height: 5rem; 
+  width: 100%;
+  display: flex;
+  #location {
+    flex: 1;
+    border: none;
+    padding-left: 2rem;
+    &::placeholder {
+      font-size: 1.5rem;
+    }
+  }
+
+  .search-button {
+    width: 5rem;
+    @include flex(center, center);
+    height: 100%;
+    color: #00a2ff;
+    background-color: white;
+    i {
+      font-size: 2.5rem;
+      transition: all .1s ease-in-out;
+    }
+    &:hover {
+      i {
+        opacity: .7;
+      }
+    }
+  } 
+}
+
+.header-bottom {
+  @include flex(center,center);
+  text-align: center;
+  position: absolute;
+  white-space: nowrap;
+  bottom: 0;
+  min-height: 8vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  h3 {
+    font-weight: 400;
+  }
+}
+
+a#header-bottom-link { 
+  color: white;
+  margin-left: 1rem; 
+}

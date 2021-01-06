@@ -1,0 +1,53 @@
+@mixin flex($just, $align){
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    &:focus {
+        outline: 1px solid black;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h2 {
+    font-size: 7rem;
+    font-weight: 200;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+a {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+.header-top {
+    @include flex(space-between, center);
+    .logo img {
+        height: 5rem;
+        width: auto;
+    }
+}
+
+.header-menu {
+    list-style: none;
+    @include flex(space-between, center);
+    width: 20rem;
+}
+
+@import "./header";
+@import "./search"; 
