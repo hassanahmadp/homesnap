@@ -1,0 +1,24 @@
+section.gif-cta {
+  height: 90vh;
+  padding: 0 15.5vw;
+  width: 100vw;
+  background-color: #f7f7f7;
+  @include idealFlex;
+}
+
+.gif-cta-image {
+  @include flex(flex-start, center);
+  flex: 1 1 50rem;
+  height: 100%;
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.gif-cta-text {
+  flex: 1 1 50rem;
+  p {
+    margin: 2rem 0 2.5rem;
+  }
+}

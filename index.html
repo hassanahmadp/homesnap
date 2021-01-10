@@ -1,80 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-    />
-    <!-- icon -->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <!-- title -->
-    <title>Homesnap</title>
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-top">
-        <div class="logo">
-          <img src="./images/logo.png" alt="homesnap logo" />
-        </div>
-        <ul class="header-menu">
-          <li><i class="fa fa-user" aria-hidden="true"></i>My Agent</li>
-          <li>Register</li>
-          <li>Sign In</li>
-        </ul>
-      </div>
-      <div class="top-section">
-        <section class="top">
-          <h2>Find your next home</h2>
-          <h3>Or see how much your home is worth</h3>
-          <div class="input-div">
-            <input
-              type="text"
-              id="location"
-              placeholder="City, Zip, Neighborhood, Address or MLS#"
-            />
-            <div class="search-button">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="header-bottom">
-        <h3 class="bottom-text">
-          Join 1,000,000+ agents who already have homesnap pro
-        </h3>
 
-        <a href="#" id="header-bottom-link">I'M A REAL ESTATE AGENT</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" />
+  <!-- icon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <!-- title -->
+  <title>Homesnap</title>
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo">
+        <img src="./images/logo.png" alt="homesnap logo" />
       </div>
-    </header>
-    <section class="search">
-      <h3>Search for Homes on Your Phone</h3>
-      <div class="search-flex">
-        <div class="search-input">
-          <div class="input-bar">
-            <input type="text" placeholder="555-555-0123" />
-            <button class="search-btn">Text Me the Link</button>
+      <ul class="header-menu">
+        <li><i class="fa fa-user" aria-hidden="true"></i>My Agent</li>
+        <li>Register</li>
+        <li>Sign In</li>
+      </ul>
+      <div class="header-menu-mobile-icon">
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="top-section">
+      <section class="top">
+        <h2>Find your next home</h2>
+        <h3>Or see how much your home is worth</h3>
+        <div class="input-div">
+          <input type="text" id="location" placeholder="City, Zip, Neighborhood, Address or MLS#" />
+          <div class="search-button">
+            <i class="fa fa-search" aria-hidden="true"></i>
           </div>
-          <h5>US mobile numbers only. Message and data rates may apply.</h5>
         </div>
-        <div class="download-buttons">
-          <button class="google-play">Google Play</button
-          ><button class="app-store">App Store</button>
+      </section>
+    </div>
+    <div class="header-bottom">
+      <h3 class="bottom-text">
+        Join 1,000,000+ agents who already have homesnap pro
+        <a href="#" id="header-bottom-link">I'M A REAL ESTATE AGENT</a>
+      </h3>
+    </div>
+  </header>
+  <!-- <section class="search" id="search">
+    <h3>Search for Homes on Your Phone</h3>
+    <div class="search-flex">
+      <div class="search-input">
+        <div class="input-bar">
+          <input type="text" placeholder="555-555-0123" />
+          <button class="search-btn">Text Me the Link</button>
         </div>
-        <div class="badge"></div>
+        <h5>US mobile numbers only. Message and data rates may apply.</h5>
       </div>
-    </section>
-  </body>
+      <div class="download-buttons">
+        <div class="google-play"><img class="btn-icon" src="./images/google-play.svg" alt="google play svg icon"> Google
+          Play</div>
+        <div class="app-store"><img class="btn-icon" src="./images/apple.svg" alt=""> App Store</div>
+      </div>
+      <div class="badge">
+        <img src="./images/top-rated-app-grey.png" alt="Top rated badge">
+      </div>
+    </div>
+  </section>
+  <section class="clipSection-1">
+    <div class="main">
+    </div>
+    <div class="text-part">
+      <h2>Search for a home from<br>anywhere</h2>
+      <p>Homesnap is the real estate industry's national search portal, featuring the same accurate, real-time
+        information that agents use. Millions of people use the same app as their real estate agent - find out why.</p>
+      <button>Get the App</button>
+    </div>
+  </section>
+  <section class="partner">
+    <div class="partner-img">
+      <img src="./images/ipad-partner-w-agent.png" alt="tilted tablet">
+    </div>
+    <div class="partner-text">
+      <h2>Partner with a knowledgeable<br>agent</h2>
+      <p>
+        Connect with your agent or with the agent who knows the most about the home you're interested in. Whether you're
+        buying or selling, use Homesnap to talk to the agent who can best help you.
+      </p>
+      <a href="#">Find an Agent</a>
+    </div>
+  </section>
+  <section class="clipSection-2">
+    <img class="explore-img" src="./images/explore-background.jpg" alt="explore background">
+    <div class="paral"></div>
+    <div class="explore-text">
+      <h2>Explore real-time data</h2>
+      <p>Homesnap's detailed listings give you instant access to HD photos, school attendance zones, property lines,
+        property history, and much more.</p>
+      <a href="#">See Newest Listings</a>
+    </div>
+  </section>
+  <section class="gif-cta">
+    <div class="gif-cta-image">
+      <img src="./images/newsfeed-animated.gif" alt="animated newsfeed">
+    </div>
+    <div class="gif-cta-text">
+      <h2>Be the first to know</h2>
+      <p>Homesnap will immediately alert you to new listings, price changes and any other market updates in the zip
+        codes you want to watch. You'll be the first to know about the real estate news you care about.</p>
+      <a href="">Get the App</a>
+    </div>
+  </section>
+  <section class="gif-talk">
+    <div class="gif-talk-text">
+      <h2>Talk about homes seamlessly</h2>
+      <p>Homesnap's in-app messaging lets you share homes with friends, family and agents, even if they aren't on
+        Homesnap.
+        Their reply will go right back to the app so you can find and discuss homes all in one place. <a href="#">Get
+          the
+          app »</a></p>
+    </div>
+    <img class="gif-talk-image" src="./images/messaging.gif" alt="messaging about homesnap">
+  </section>
+  <section class="reviews">
+    <h3>Recent Customer Reviews</h3>
+    <div class="sliderAndBtns">
+      <div class="sider-face">
+        <div class="slider">
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+          <div class="review">
+            <div class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4 class="head">The most functional house hunting app</h4>
+            <p class="main-review">This app brings a great user experience to the real estate market. It’s beautiful and
+              intuitive. Makes it super easy to communicate with your agent about houses and showings. Most of all it
+              doesn’t try to sell you anything, like most of the others do, either overtly or by more camouflaged
+              efforts.
+            </p>
+            <h4 class="name">ASchnacks</h4>
+            <h4 class="review-date">
+              Jan 2, 2021
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="arrow prev" id="arrow">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+      </div>
+      <div class="arrow next" id="arrow">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </div>
+    </div>
+  </section>
+  <section class="changing">
+    <img src="./images/agents-bg.jpg" alt="agent using his cellphone" class="ch-image">
+    <div class="paral-2">
+    </div>
+    <div class="changing-text">
+      <span>PRO</span>
+      <h2>We're changing the way agents run their business</h2>
+      <p>Find out why Homesnap Pro is now the industry standard mobile platform for agents to grow their business and delight their clients.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </section>
+  <section class="pro-plus"></section>
+
+
+
+
+  <div style="height: 120vh; width: 100vw; background-color: black;">
+  </div> -->
+
+
+
+
+  <script src="./js/app.js"></script>
+
+</body>
+
 </html>

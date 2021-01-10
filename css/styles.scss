@@ -1,53 +1,122 @@
-@mixin flex($just, $align){
-    display: flex;
-    justify-content: $just;
-    align-items: $align;
+$colors: (
+  style-color: #006dc7,
+  text-black: rgb(80, 80, 80),
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
+
+@mixin flex($just, $align) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+}
+
+@mixin idealFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    &:focus {
-        outline: 1px solid black;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  &:focus {
+    outline: 1px solid black;
+  }
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h2 {
-    font-size: 7rem;
-    font-weight: 200;
+  font-size: 5.1rem;
+  font-weight: 200;
 }
 
 li {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 a {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: color(text-black);
+}
+
+p {
+  font-size: 2.1rem;
+  font-weight: 300;
+}
+
+body > section > p {
+  margin: 2rem 0 3.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: color(style-color);
+  font-size: 1.8rem;
+  padding: 1rem 3.5rem;
+  border-radius: 0.3rem;
+}
+
+a#header-bottom-link {
+  text-decoration: underline;
+  background-color: transparent !important;
+  color: white;
+  margin-left: 1rem;
 }
 
 .header-top {
-    @include flex(space-between, center);
-    .logo img {
-        height: 5rem;
-        width: auto;
-    }
+  @include flex(space-between, center);
+  .logo img {
+    height: 5rem;
+    width: auto;
+  }
 }
 
 .header-menu {
-    list-style: none;
-    @include flex(space-between, center);
-    width: 20rem;
+  list-style: none;
+  @include flex(space-between, center);
+  width: 20rem;
+}
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 40%;
+  }
 }
 
 @import "./header";
-@import "./search"; 
+@import "./search";
+@import "./clipSection-1";
+@import "./partner";
+@import "./clipSection-2";
+@import "./gif-cta";
+@import "./gif-talk";
+@import "./reviews";
+@import "./changing";
+// @import "./pro-plus";

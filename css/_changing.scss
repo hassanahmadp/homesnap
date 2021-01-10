@@ -1,0 +1,38 @@
+section.changing {
+  @include idealFlex;
+  height: 58rem;
+  position: relative;
+  img {
+    position: relative;
+    z-index: -2;
+    height: 100%;
+    width: 50vw;
+    object-fit: cover;
+  }
+  .paral-2 {
+    background-color: white;
+    height: 100%;
+    width: 61%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: skew(-15deg);
+    z-index: -1;
+  }
+  .changing-text {
+    // border: 2px solid black;
+    width: 50vw;
+    height: auto;
+    padding-right: 11%;
+    span {
+      color: white;
+      background-color: #f5db48;
+      padding: 2px 5px;
+      font-size: 1.3rem;
+      border-radius: 5px;
+    }
+    p {
+      margin: 2.5rem 0;
+    }
+  }
+}

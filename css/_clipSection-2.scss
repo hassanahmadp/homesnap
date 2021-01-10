@@ -1,0 +1,47 @@
+section.clipSection-2 {
+  height: 56vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.paral {
+  position: absolute;
+  top: 0;
+  left: -10rem;
+  height: 100%;
+  width: 65%;
+  transform: skew(-15deg);
+  background-color: white;
+}
+
+img.explore-img {
+  position: absolute;
+  height: 140%;
+  top: -10rem;
+  right: 0;
+}
+
+.explore-text {
+  position: relative;
+  top: 50%;
+  left: 14%;
+  transform: translate(-0%, -50%);
+  width: 36vw;
+
+  p {
+    margin: 2rem 0 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: color(style-color);
+    padding: 1rem 1.5rem;
+    transition: 0.3s ease;
+    font-size: 1.5rem;
+    &:hover {
+      background-color: darken(color(style-color), 10%);
+    }
+  }
+}

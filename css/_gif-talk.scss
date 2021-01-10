@@ -1,0 +1,26 @@
+section.gif-talk {
+  text-align: center;
+  max-width: 83rem;
+  margin: 0 auto;
+  padding: 5rem 5rem 0;
+  p {
+      line-height: 3rem;
+      color: color(text-black);
+  }
+  a {
+    text-decoration: none;
+    color: color(style-color);
+    background-color: transparent;
+    font-size: 1.8rem;
+    padding: 0;
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+  img {
+      margin-top: 1rem;
+      width: 100%;
+      position: relative;
+      top: .3rem;
+  }
+}
