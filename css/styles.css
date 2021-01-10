@@ -338,7 +338,7 @@ a#header-bottom-link {
 section.search#search {
   padding: 2.5rem 0;
   width: 100vw;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   text-align: center;
   height: auto;
 }
@@ -362,11 +362,13 @@ section.search#search h3 {
   padding: 1rem 15vw;
 }
 
+.search-flex > div {
+  margin: 1rem 1rem;
+}
+
 .search-input {
   position: relative;
   top: 1rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,8 +443,8 @@ section.search#search h3 {
   background-color: #006dc7;
   color: white;
   height: 100%;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .search-input .input-bar .search-btn:hover {
@@ -483,27 +485,72 @@ section.search#search h3 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.5rem;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .download-buttons div .btn-icon {
   height: 2rem;
-  margin-right: .7rem;
+  margin-right: 0.7rem;
 }
 
 .download-buttons div:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .badge {
-  height: auto;
   width: 20rem;
 }
 
 .badge img {
   width: 100%;
-  height: 100%;
+}
+
+@media (max-width: 1150px) {
+  .search-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .search-input {
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search-input .input-bar {
+    width: 70vw;
+    min-width: 28rem;
+  }
+  .search-input .input-bar input {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .search-input .input-bar .search-btn {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    white-space: nowrap;
+    font-size: 2rem;
+  }
 }
 
 .clipSection-1 {
