@@ -31,7 +31,7 @@ section.search#search {
   }
   .input-bar {
     display: flex;
-    width: 40rem;
+    min-width: 40rem;
     height: 4.5rem;
     input {
       border-top-left-radius: 2.5rem;
@@ -112,16 +112,38 @@ section.search#search {
     top: 0;
     @include idealFlex;
     .input-bar {
-      width: 70vw;
+      width: 60vw;
       min-width: 28rem;
       input {
         flex-grow: 2;
       }
       .search-btn {
         flex-grow: 1;
-        white-space: nowrap;
+        // white-space: nowrap;
         font-size: 2rem;
       }
     }
   }
+
+}
+
+@media (max-width: 450px) {
+    .input-bar {
+      width: 90vw;
+      input {
+        width: 50%;
+        flex-grow: 1;
+      }
+      .search-btn {
+        width: 50%;
+      }
+    }
+
+    .download-buttons {
+      @include idealFlex;
+      flex-wrap: wrap;
+      div {
+        margin: 1rem;
+      }
+    }
 }

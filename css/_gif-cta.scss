@@ -1,5 +1,5 @@
 section.gif-cta {
-  height: 90vh;
+  height: 85rem;
   padding: 0 15.5vw;
   width: 100vw;
   background-color: #f7f7f7;
@@ -20,5 +20,36 @@ section.gif-cta {
   flex: 1 1 50rem;
   p {
     margin: 2rem 0 2.5rem;
+  }
+}
+
+@media (max-width: 1052px) {
+  section.gif-cta {
+    height: 80rem;
+    padding: 0 12vw;
+    background-color: #f7f7f7;
+    @include idealFlex;
+    flex-wrap: wrap;
+
+  }
+
+  .gif-cta-image {
+    @include idealFlex;
+    position: relative;
+    z-index: 1;
+    order: 2;
+    height: 70rem;
+    width: auto;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .gif-cta-text {
+    margin: 5rem 0;
+    width: 20rem;
+    text-align: center;
+    order: 1;
   }
 }

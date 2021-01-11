@@ -1,26 +1,36 @@
 .clipSection-1 {
+  overflow: hidden;
   position: relative;
-  height: 55vh;
+  height: 50rem;
   width: 100vw;
-  .main {
-    z-index: -1;
-    width: 100%;
+  @include flex(space-between, center);
+  flex-wrap: wrap;
+  .clipSection-1-image {
     height: 100%;
-    background-image: url(../images/search-background-v2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(45% 0, 100% 0%, 100% 100%, 55% 100%);
+    width: 50%;
+    min-width: 55rem;
+    object-fit: cover;
+    position: relative;
+    z-index: -2;
   }
 }
 
-.text-part {
+.clipSection-1-paral {
+  height: 100%;
+  width: 65%;
+  background-color: white;
   position: absolute;
-  top: 50%;
-  left: 14%;
-  transform: translate(-0%, -50%);
-  width: 34vw;
-  z-index: 10;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: skew(-15deg);
+  // display: none;
+}
+
+.text-part {
+  height: auto;
+  width: 50%;
+  padding-left: 15vw;
   p {
     margin: 2.5rem 0;
   }
@@ -31,9 +41,47 @@
     color: white;
     padding: 1.5rem 4.5rem;
     border-radius: 2px;
-    transition: .3s ease;
+    transition: 0.3s ease;
     &:hover {
-        background-color: darken(color(style-color), 10%);
+      background-color: darken(color(style-color), 10%);
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .clipSection-1 {
+    padding: 5rem 0 0;
+    height: auto;
+    width: 100vw;
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    .clipSection-1-image {
+      height: 50%;
+      width: 100%;
+      min-width: 55rem;
+    }
+  }
+
+  .clipSection-1-paral {
+    height: 60%;
+    width: 200rem;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -10rem;
+    transform: rotate(5deg);
+  }
+
+  .text-part {
+    background-color: transparent;
+    text-align: center;
+    padding-right: 10vw;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+    p {
+      width: 100%;
     }
   }
 }

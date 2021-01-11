@@ -1,34 +1,35 @@
 section.clipSection-2 {
-  height: 56vh;
+  height: 65rem;
   width: 100vw;
   position: relative;
-  overflow: hidden;
+  @include flex(space-between, center);
 }
 
 .paral {
   position: absolute;
   top: 0;
-  left: -10rem;
+  left: 0;
   height: 100%;
-  width: 65%;
+  width: 60%;
   transform: skew(-15deg);
   background-color: white;
+  z-index: -1;
 }
 
 img.explore-img {
-  position: absolute;
-  height: 140%;
-  top: -10rem;
-  right: 0;
+  position: relative;
+  height: 100%;
+  width: 50%;
+  min-width: 55rem;
+  object-fit: cover;
+  z-index: -2;
 }
 
 .explore-text {
   position: relative;
-  top: 50%;
-  left: 14%;
-  transform: translate(-0%, -50%);
-  width: 36vw;
-
+  height: auto;
+  width: 50%;
+  padding-left: 15vw;
   p {
     margin: 2rem 0 3rem;
   }
@@ -43,5 +44,42 @@ img.explore-img {
     &:hover {
       background-color: darken(color(style-color), 10%);
     }
+  }
+}
+
+@media (max-width: 880px) {
+  section.clipSection-2 {
+    height: auto;
+    padding: 5rem 0 0;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  img.explore-img {
+    height: 50%;
+    width: 100%;
+    min-width: 1rem;
+    object-fit: cover;
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+    top: 5rem;
+  }
+
+  .explore-text {
+    height: auto;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    padding: 1rem 10vw;
+  }
+
+  .paral {
+    height: 50%;
+    width: 200%;
+    left: -10rem;
+    background-color: white;
+    transform: rotate(5deg);
+    z-index: -1;
   }
 }

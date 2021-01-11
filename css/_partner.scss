@@ -31,3 +31,28 @@ section.partner {
     }
   }
 }
+
+@media (max-width: 1430px) {
+  section.partner {
+    @include idealFlex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .partner-text {
+    order: 1;
+    width: 100%;
+  }
+
+  .partner-img {
+    margin-top: 10rem;
+    order: 2;
+    width: 100%;
+    height: 100%;
+    @include idealFlex;
+    img {
+      height: 120%;
+      width: 120%;
+    }
+  }
+}
