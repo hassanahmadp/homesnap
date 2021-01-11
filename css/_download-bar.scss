@@ -1,0 +1,42 @@
+section.download-bar {
+  @include flex(space-between, center);
+  height: 30rem;
+  padding-left: 11vw;
+  overflow: hidden;
+  background-color: #0f172c;
+  color: white;
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+
+  .download-buttons2 {
+    @include flex(space-between, center);
+    width: 31rem;
+    margin: 0;
+    div {
+      border: 2px solid white;
+      color: white;
+      background-color: transparent;
+      width: 15rem;
+      height: 4.5rem;
+      border-radius: 2.5rem;
+      padding: 0 3rem;
+      margin: 0;
+      white-space: nowrap;
+      @include flex(space-around, center);
+      font-size: 1.5rem;
+      transition: 0.3s ease;
+
+      .btn-icon {
+        height: 2rem;
+        margin-right: 0.7rem;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
