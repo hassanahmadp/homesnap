@@ -2,12 +2,12 @@ section.download-bar {
   @include flex(space-between, center);
   height: 30rem;
   padding-left: 11vw;
+  position: relative;
   overflow: hidden;
   background-color: #0f172c;
   color: white;
   h2 {
     font-size: 3rem;
-    // margin-bottom: 1rem;
     font-weight: 300;
   }
 
@@ -43,4 +43,40 @@ section.download-bar {
       }
     }
   }
-} 
+}
+
+.download-bar-text {
+  width: 50%;
+}
+
+.download-bar-img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 50%;
+  z-index: 2;
+  height: auto;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .download-bar-img {
+    display: none;
+  }
+
+  .download-bar-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  section.download-bar .download-buttons2 {
+    margin: 0 auto;
+  }
+
+  section.download-bar {
+    padding-left: 0;
+  }
+}
