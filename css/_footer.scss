@@ -4,13 +4,13 @@ footer {
     }
 
     li {
-        font-size: 1.5rem;
+        font-size: 15px;
         color: color(text-black);
     }
     a {
         background-color: transparent;
         padding: 0;
-        font-size: 1.5rem;
+        font-size: 15px;
         color: color(text-black);
         &:hover {
             color: color(style-color);
@@ -19,12 +19,43 @@ footer {
     }
     button {
         height: auto;
-        font-size: 1.5rem;
+        font-size: 15px;
         width: auto;
         background-color: transparent;
         color: color(style-color);
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+.footer {
+    background-color: #EFF2F7;
+}
+
+.badgesAndLinks .row img {
+    height: auto;
+}
+
+.footerSocialIcons {
+    font-size: 1.5rem;
+}
+
+.textAndStuff {
+    text-align: right;
+    
+    h5 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 1.1rem;
+        // white-space: nowrap;
+        font-weight: 400;
+        a {
+            font-size: 1.2rem;
+            font-weight: 400;
         }
     }
 }
