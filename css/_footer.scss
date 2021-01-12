@@ -10,7 +10,7 @@ footer {
     a {
         background-color: transparent;
         padding: 0;
-        font-size: 15px;
+        font-size: 12px;
         color: color(text-black);
         &:hover {
             color: color(style-color);
@@ -19,7 +19,7 @@ footer {
     }
     button {
         height: auto;
-        font-size: 15px;
+        font-size: 12px;
         width: auto;
         background-color: transparent;
         color: color(style-color);
@@ -59,3 +59,22 @@ footer {
         }
     }
 }
+
+@media (max-width: 767px) {
+    .textAndStuff {
+        text-align: left;
+    }
+
+    .footerSocialIcons {
+        div {
+            order: 1;
+        }
+    }
+
+    .badgesAndLinks .row div {
+        display: none;
+    }
+}
+
+
+
