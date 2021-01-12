@@ -1,6 +1,7 @@
 $colors: (
   style-color: #006dc7,
   text-black: rgb(80, 80, 80),
+  pro-color: #f5db48,
 );
 
 @function color($color) {
@@ -116,7 +117,6 @@ a#header-bottom-link {
   }
 }
 
-
 @import "./header";
 @import "./search";
 @import "./clipSection-1";
@@ -128,3 +128,4 @@ a#header-bottom-link {
 @import "./changing";
 @import "./pro-plus";
 @import "./download-bar";
+@import "./proAds";

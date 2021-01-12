@@ -644,7 +644,6 @@ section.search#search h3 {
   background-color: #006dc7;
   border: none;
   color: white;
-  padding: 1.5rem 4.5rem;
   border-radius: 2px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -1008,7 +1007,7 @@ section.gif-talk p {
   color: #505050;
 }
 
-section.gif-talk a {
+section.gif-talk button {
   text-decoration: none;
   color: #006dc7;
   background-color: transparent;
@@ -1016,7 +1015,7 @@ section.gif-talk a {
   padding: 0;
 }
 
-section.gif-talk a:hover {
+section.gif-talk button:hover {
   text-decoration: underline;
 }
 
@@ -1322,7 +1321,6 @@ section.pro-plus {
 }
 
 button {
-  margin-top: 2rem;
   height: 3.5rem;
   width: 16rem;
   background-color: #006dc7;
@@ -1396,8 +1394,11 @@ section.download-bar {
 
 section.download-bar h2 {
   font-size: 3rem;
-  margin-bottom: 1rem;
   font-weight: 300;
+}
+
+section.download-bar p {
+  margin-bottom: 2rem;
 }
 
 section.download-bar .download-buttons2 {
@@ -1444,5 +1445,80 @@ section.download-bar .download-buttons2 div .btn-icon {
 
 section.download-bar .download-buttons2 div:hover {
   opacity: 0.7;
+}
+
+section.proAds {
+  padding: 0 11vw;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.proAds-text {
+  width: 50%;
+}
+
+.proAds-text span {
+  color: white;
+  padding: .5rem 1.5rem;
+  background-color: #f5db48;
+  border-radius: .5rem;
+}
+
+.proAds-text .social img {
+  height: 5rem;
+  margin: 2rem 1rem 1rem 0;
+}
+
+.proAds-text p {
+  margin: 2rem 0 0;
+}
+
+.proAds-image {
+  height: 50%;
+}
+
+.proAds-image img {
+  height: 100%;
+}
+
+@media (max-width: 976px) {
+  section.proAds {
+    padding: 0 5vw;
+  }
+}
+
+@media (max-width: 846px) {
+  section.proAds {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin: 5rem 0;
+  }
+  .proAds-text {
+    text-align: center;
+  }
+  .proAds-text h2 {
+    font-size: 4rem;
+  }
+  .proAds-image {
+    height: auto;
+    width: 50%;
+    min-width: 50rem;
+  }
+  .proAds-image img {
+    width: 100%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

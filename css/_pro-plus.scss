@@ -26,7 +26,7 @@ section.pro-plus {
     @include idealFlex;
     flex: 2;
     color: white;
-    background-color: #f5db48;
+    background-color: color(pro-color);
     padding: 3px 6px;
     font-size: 1.3rem;
   }
@@ -48,7 +48,6 @@ section.pro-plus {
 }
 
 button {
-  margin-top: 2rem;
   height: 3.5rem;
   width: 16rem;
   background-color: color(style-color);

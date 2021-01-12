@@ -1,0 +1,69 @@
+section.proAds {
+    padding: 0 11vw;
+    width: 100%;
+    height: 100vh;
+    @include idealFlex;
+    flex-wrap: wrap;
+}
+
+.proAds-text {
+    width: 50%;
+    span {
+        color: white;
+        padding: .5rem 1.5rem;
+        background-color: color(pro-color);
+        border-radius: .5rem;
+    }
+
+    .social {
+        img {
+            height: 5rem;
+            margin: 2rem 1rem 1rem 0;
+        }
+    }
+
+    p {
+        margin: 2rem 0 0;
+    }
+}
+
+.proAds-image {
+    height: 50%;
+    img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 976px) {
+
+    section.proAds {
+        padding: 0 5vw;
+    }
+
+}
+
+@media (max-width: 846px) {
+    section.proAds {
+        padding: 0;
+        width: 100%;
+        height: auto;
+        margin: 5rem 0;
+    }
+
+    .proAds-text {
+        text-align: center;
+        h2 {
+            font-size: 4rem;
+        }
+    }
+
+    .proAds-image {
+        height: auto;
+        width: 50%;
+        min-width: 50rem;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
