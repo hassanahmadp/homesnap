@@ -1,7 +1,7 @@
 section.proAds {
     padding: 0 11vw;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     @include idealFlex;
     flex-wrap: wrap;
 }
@@ -10,9 +10,11 @@ section.proAds {
     width: 50%;
     span {
         color: white;
-        padding: .5rem 1.5rem;
+        padding: .3rem 1rem;
         background-color: color(pro-color);
         border-radius: .5rem;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
     }
 
     .social {
@@ -23,14 +25,14 @@ section.proAds {
     }
 
     p {
-        margin: 2rem 0 0;
+        margin: 1rem 0 1.5rem;
     }
 }
 
 .proAds-image {
     height: 50%;
     img {
-        height: 100%;
+        height: 130%;
     }
 }
 
