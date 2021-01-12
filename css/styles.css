@@ -1559,4 +1559,37 @@ section.proAds {
     height: auto;
   }
 }
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  font-size: 1.5rem;
+  color: #505050;
+}
+
+footer a {
+  background-color: transparent;
+  padding: 0;
+  font-size: 1.5rem;
+  color: #505050;
+}
+
+footer a:hover {
+  color: #006dc7;
+  text-decoration: underline;
+}
+
+footer button {
+  height: auto;
+  font-size: 1.5rem;
+  width: auto;
+  background-color: transparent;
+  color: #006dc7;
+}
+
+footer button:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=styles.css.map */

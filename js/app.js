@@ -4,11 +4,7 @@ var next = document.querySelector(".next");
 
 prev.addEventListener("click", Slide);
 next.addEventListener("click", Slide);
-
-// counter
 var counter = 0;
-// size
-// var size = 
 
 checkBtn();
 

@@ -1,0 +1,30 @@
+footer {
+    ul {
+        list-style: none;
+    }
+
+    li {
+        font-size: 1.5rem;
+        color: color(text-black);
+    }
+    a {
+        background-color: transparent;
+        padding: 0;
+        font-size: 1.5rem;
+        color: color(text-black);
+        &:hover {
+            color: color(style-color);
+            text-decoration: underline;
+        }
+    }
+    button {
+        height: auto;
+        font-size: 1.5rem;
+        width: auto;
+        background-color: transparent;
+        color: color(style-color);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
