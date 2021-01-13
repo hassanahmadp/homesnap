@@ -32,9 +32,9 @@
         <img src="./images/logo.png" alt="homesnap logo" />
       </div>
       <ul class="header-menu">
-        <li><i class="fa fa-user" aria-hidden="true"></i>My Agent</li>
-        <li>Register</li>
-        <li>Sign In</li>
+        <li class="px-4"><button><i class="fa fa-user" aria-hidden="true"></i>My Agent</button></li>
+        <li class="px-4"><button>Register</button></li>
+        <li class="px-4"><button type="button" data-toggle="modal" data-target="#signInModal">Sign In</button></li>
       </ul>
       <div class="header-menu-mobile-icon">
         <i class="fa fa-user" aria-hidden="true"></i>
@@ -546,7 +546,7 @@
               <img class="col-3 py-2" src="./images/google_badge.png" alt="google badge">
               <img class="col-2" src="./images/waze_badge.png" alt="waze badge">
             </div>
-  
+
             <div class="row footerSocialIcons">
               <div class="col-8"></div>
               <i class="col-1 fa fa-facebook-square" aria-hidden="true"></i>
@@ -554,19 +554,52 @@
               <i class="col-1 fa fa-instagram" aria-hidden="true"></i>
               <i class="col-1 fa fa-pinterest" aria-hidden="true"></i>
             </div>
-  
+
             <div class="textAndStuff mt-3">
               <h5>Homesnap, Inc</h5>
-              <h6>7200 Wisconsin Avenue | Suite 200 | Bethesda, MD 20814 ©<br>2021 Homesnap <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a><br><a href="#">Do Not Sell My Personal Information</a></h6>
+              <h6>7200 Wisconsin Avenue | Suite 200 | Bethesda, MD 20814 ©<br>2021 Homesnap <a href="#">Terms of Use</a>
+                | <a href="#">Privacy Policy</a><br><a href="#">Do Not Sell My Personal Information</a></h6>
             </div>
           </div>
         </div>
-  
-  
-  
+
+
+
       </div>
     </footer>
   </div>
+
+
+
+  <!-- //////////////////// MODALS //////////////////// -->
+  <!-- Sign in modal -->
+  <div class="container">
+    <div class="modal" id="signInModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Sign In</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Modal body..
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //////////////////////////////////////////////// -->
+
 
 
 

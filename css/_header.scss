@@ -12,7 +12,21 @@
 .header-menu {
   list-style: none;
   @include flex(space-between, center);
-  width: 20rem;
+  width: auto;
+  li {
+    cursor: pointer;
+    button {
+      background-color: transparent;
+      width: auto;
+      height: auto;
+      font-size: 1.5rem;
+      transition: .3s ease;
+      &:hover {
+        background-color: white;
+        color: color(text-black);
+      }
+    }
+  }
 }
 
 header {
