@@ -32,8 +32,9 @@
         <img src="./images/logo.png" alt="homesnap logo" />
       </div>
       <ul class="header-menu">
-        <li class="px-4"><button><i class="fa fa-user" aria-hidden="true"></i>My Agent</button></li>
-        <li class="px-4"><button>Register</button></li>
+        <li class="px-4"><button type="button" data-toggle="modal" data-target="#myAgentModal"><i class="fa fa-user"
+              aria-hidden="true"></i>My Agent</button></li>
+        <li class="px-4"><button type="button" data-toggle="modal" data-target="#registerModal">Register</button></li>
         <li class="px-4"><button type="button" data-toggle="modal" data-target="#signInModal">Sign In</button></li>
       </ul>
       <div class="header-menu-mobile-icon">
@@ -99,7 +100,7 @@
         Connect with your agent or with the agent who knows the most about the home you're interested in. Whether you're
         buying or selling, use Homesnap to talk to the agent who can best help you.
       </p>
-      <a href="#">Find an Agent</a>
+      <button type="button" data-toggle="modal" data-target="#myAgentModal">Find an Agent</button>
     </div>
   </section>
   <section class="clipSection-2">
@@ -572,6 +573,80 @@
 
 
   <!-- //////////////////// MODALS //////////////////// -->
+  <!-- My agent modal -->
+  <div class="container">
+    <div class="modal fade" id="myAgentModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content p-3">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Find My Agent</h4>
+            <button type="button" class="close myAgentModalClose" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body container-fluid">
+            <div class="row">
+              <p class="col-12">
+                Connect with your agent on Homesnap:
+              </p>
+              <ul class="col-10 ml-auto">
+                <li>Share homes</li>
+                <li>Request tours</li>
+                <li>Message back and forth</li>
+                <li>Unlock pro-level data like real-time info on contracts and sales</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer container">
+            <div class="container-fluid btnsContainer row">
+              <button class="col-12 p-2 my-3 btn-primary">Find Agent by Name</button>
+              <button class="col-12 p-2 btn-primary">Find Agent by Address</button>
+              <p class="mb-3 mx-auto">...of the last home you bought or sold</p>
+            </div>
+          </div>
+          <div class="container link_conTainer row mt-4">
+            <a href="#">I'm a real estate agent</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- register Modal -->
+  <div class="container">
+    <div class="modal fade" id="registerModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content p-3">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Homesnap Sign Up</h4>
+            <button type="button" class="close myAgentModalClose" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body container-fluid">
+            <div class="row">
+              <div class="col-12 btn btn-primary p-2 mb-2 mt-4 signUpBtn">Sign Up</div>
+              <div class="col-12 btn btn-primary p-2 mt-2 mb-4 mReal">I'm a real estate agent</div>
+            </div>
+            <div class="row achorPara mt-3">
+              <p class="col-12">Already have an account?<a class="btn-link" href="#">Sign In</a></p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <!-- Sign in modal -->
   <div class="container">
     <div class="modal fade" id="signInModal">
@@ -621,7 +696,7 @@
     </div>
   </div>
   <!-- //////////////////////////////////////////////// -->
-
+  
 
 
   <!-- <div style="height: 120vh; width: 100vw; background-color: black; position: relative; z-index: 10;">

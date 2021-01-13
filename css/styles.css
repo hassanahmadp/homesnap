@@ -1657,17 +1657,11 @@ footer button:hover {
   }
 }
 
-.signInModalClose {
+.signInModalClose,
+.myAgentModalClose {
   width: auto;
   height: auto;
   font-size: 3rem;
-}
-
-#signInModal h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 25px;
-  color: #505050;
 }
 
 #signInModal .fbLogo {
@@ -1761,5 +1755,80 @@ footer button:hover {
   background-color: transparent;
   padding: 0;
   color: #006dc7;
+}
+
+.modal h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: #505050;
+}
+
+#myAgentModal p,
+#myAgentModal li {
+  font-size: 1.3rem;
+}
+
+#myAgentModal p {
+  margin-bottom: 0;
+  color: black;
+}
+
+#myAgentModal a {
+  background-color: transparent;
+  padding: 0;
+  color: #006dc7;
+}
+
+#myAgentModal .link_conTainer {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#myAgentModal .btnsContainer {
+  padding: 0;
+  margin: 0;
+}
+
+#myAgentModal .btnsContainer button {
+  font-size: 1.4rem;
+}
+
+#registerModal h4 {
+  font-size: 2.1rem;
+}
+
+#registerModal .signUpBtn, #registerModal .mReal {
+  font-size: 1.4rem;
+}
+
+#registerModal .achorPara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#registerModal .achorPara p {
+  font-size: 1.5rem;
+}
+
+#registerModal .achorPara a {
+  padding: 0;
+  background-color: transparent;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
