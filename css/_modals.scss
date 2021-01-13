@@ -1,0 +1,60 @@
+.signInModalClose {
+    width: auto;
+    height: auto;
+    font-size: 3rem;
+}
+
+#signInModal {
+    h4 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        color: color(text-black);
+    }
+    .fbLogo {
+        color: white;
+        background-color: color(fb-main);
+        font-size: 2rem;
+        @include idealFlex;
+    }
+    .fbButton {
+        background-color: color(fb-2);
+        color: white;
+        font-size: 1.5rem;
+        @include idealFlex;
+    }
+
+    .orCont {
+        @include idealFlex;
+        font-size: 1.8rem;
+        color: color(text-black);
+    }
+
+    label {
+        color: color(text-black);
+        padding: 0;
+        padding-top: 1rem;
+        font-size: 1.8rem;
+    }
+    
+    input {
+        border: 2px solid rgba(110, 110, 110, 0.623);
+        color: color(text-black);
+        &::placeholder {
+            font-size: 1.5rem;
+        }
+    }
+
+    .signInBtn {
+        color: white;
+        font-size: 1.8rem;
+        @include idealFlex;
+        border: none;
+    }
+    
+    .forgotPass {
+        background-color: transparent;
+        padding: 0;
+        color: color(style-color);
+    }
+}

@@ -574,24 +574,46 @@
   <!-- //////////////////// MODALS //////////////////// -->
   <!-- Sign in modal -->
   <div class="container">
-    <div class="modal" id="signInModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
+    <div class="modal fade" id="signInModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content p-3">
 
           <!-- Modal Header -->
           <div class="modal-header">
             <h4 class="modal-title">Sign In</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close signInModalClose" data-dismiss="modal">&times;</button>
           </div>
 
           <!-- Modal body -->
           <div class="modal-body">
-            Modal body..
+            <div class="container-fluid fbBadge">
+              <div class="row">
+                <div class="fbLogo col-2 p-2">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="fbButton col-10">
+                  Sign In with Facebook
+                </div>
+              </div>
+            </div>
+            <div class="container my-4 orCont">
+              -or-
+            </div>
+            <form action="" class="container-fluid">
+              <div class="row">
+                <label class="col-12" for="signInEmail">Email Address</label>
+                <input class="col-12 py-3" type="email" id="signInEmail" placeholder="Email Address">
+                <label class="col-12" for="signInPass">Password</label>
+                <input class="col-12 py-3" type="password" id="signInPass" placeholder="Password">
+                <input class="col-12 btn btn-primary mt-4 signInBtn" type="submit" value="Sign In">
+              </div>
+            </form>
+
           </div>
 
           <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <div class="modal-footer container">
+            <a class="mx-auto mt-5 forgotPass" href="#">Forgot Password</a>
           </div>
 
         </div>
